@@ -1,0 +1,10 @@
+2026-44-04/26/26 13:44:24-ArithmeticApp-INFO-Starting the arithmetic operations.
+2026-44-04/26/26 13:44:24-ArithmeticApp-ERROR-Division by zero is not allowed.
+2026-44-04/26/26 13:44:24-ArithmeticApp-INFO-Finished the arithmetic operations.
+2026-45-04/26/26 13:45:28-ArithmeticApp-INFO-Starting the arithmetic operations.
+2026-45-04/26/26 13:45:28-ArithmeticApp-DEBUG-Adding 10 and  5: 15
+2026-45-04/26/26 13:45:28-ArithmeticApp-DEBUG-Subtracting 10 and  5: 5
+2026-45-04/26/26 13:45:28-ArithmeticApp-DEBUG-Multiplying 10 and  5: 50
+2026-45-04/26/26 13:45:28-ArithmeticApp-DEBUG-Dividing 10 and  5: 2.0
+2026-45-04/26/26 13:45:28-ArithmeticApp-ERROR-Division by zero is not allowed.
+2026-45-04/26/26 13:45:28-ArithmeticApp-INFO-Finished the arithmetic operations.
