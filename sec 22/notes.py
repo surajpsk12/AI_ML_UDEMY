@@ -1,0 +1,82 @@
+'''
+Probability Distribution Function pdf : 
+    - A function that describes the likelihood of a random variable taking on a particular value.
+    - For continuous random variables, the pdf is a non-negative function that integrates to 1 over the entire range of possible values.
+    - for example, the normal distribution has a bell-shaped pdf that is defined by its mean and standard deviation.a real life example of a pdf is the distribution of heights in a population, where the pdf would describe the likelihood of individuals having certain heights. 
+    - use in ml : The pdf is used in machine learning to model the distribution of data and to make predictions based on that distribution. For example, in a classification problem, the pdf can be used to estimate the probability of a data point belonging to a certain class based on its features. In regression problems, the pdf can be used to model the distribution of the target variable and make predictions based on that distribution. Additionally, the pdf is also used in various algorithms such as Naive Bayes and Gaussian Mixture Models for classification and clustering tasks.
+    
+Cumulative Distribution Function cdf :
+    - A function that describes the probability that a random variable takes on a value less than or equal to a specific value.
+    - The cdf is a non-decreasing function that ranges from 0 to 1, and it can be derived from the pdf by integrating it from negative infinity to the specific value.
+    - For example, in the case of the normal distribution, the cdf would give us the probability that a randomly selected individual from the population has a height less than or equal to a certain value.
+    - use in ml : The cdf is used in machine learning to model the distribution of data and to make predictions based on that distribution. For example, in a classification problem, the cdf can be used to estimate the probability of a data point belonging to a certain class based on its features. In regression problems, the cdf can be used to model the distribution of the target variable and make predictions based on that distribution. Additionally, the cdf is also used in various algorithms such as Naive Bayes and Gaussian Mixture Models for classification and clustering tasks.
+
+
+Probability Mass Function pmf :
+    - A function that describes the probability of a discrete random variable taking on a specific value.
+    - The pmf is a non-negative function that sums to 1 over all possible values of the random variable.
+    - For example, in the case of rolling a fair six-sided die, the pmf would give us the probability of rolling each of the numbers from 1 to 6, which is 1/6 for each outcome.
+    - use in ml : The pmf is used in machine learning to model the distribution of discrete data and to make predictions based on that distribution. For example, in a classification problem, the pmf can be used to estimate the probability of a data point belonging to a certain class based on its features. In regression problems, the pmf can be used to model the distribution of the target variable and make predictions based on that distribution. Additionally, the pmf is also used in various algorithms such as Naive Bayes and Gaussian Mixture Models for classification and clustering tasks.
+
+
+relationship btw pdf, cdf, and pmf :
+    - The pdf, cdf, and pmf are all related to each other in that they describe different aspects of the probability distribution of a random variable. The pdf describes the likelihood of a random variable taking on a specific value, while the cdf describes the probability that a random variable takes on a value less than or equal to a specific value. The pmf, on the other hand, describes the probability of a discrete random variable taking on a specific value. In general, the cdf can be derived from the pdf by integrating it, and the pmf can be derived from the cdf by taking the difference between the cdf values at adjacent points.
+    - For example, if we have a continuous random variable with a pdf, we can derive the cdf by integrating the pdf from negative infinity to a specific value. Similarly, if we have a discrete random variable with a pmf, we can derive the cdf by summing the pmf values for all values less than or equal to a specific value. In summary, the pdf, cdf, and pmf are all interconnected and provide different perspectives on the probability distribution of a random variable.
+    - In machine learning, understanding the relationship between these functions is crucial for modeling data and making predictions based on that data. For example, when working with continuous data, we may use the pdf to model the distribution of the data and the cdf to make predictions about the likelihood of certain outcomes. When working with discrete data, we may use the pmf to model the distribution of the data and the cdf to make predictions about the likelihood of certain outcomes. Overall, a solid understanding of these functions and their relationships is essential for effectively applying probability theory in machine learning.
+    - For example, in a classification problem, we may use the pdf to model the distribution of the features for each class and the cdf to make predictions about the likelihood of a data point belonging to a certain class based on its features. In regression problems, we may use the pdf to model the distribution of the target variable and the cdf to make predictions about the likelihood of certain outcomes based on that distribution. Additionally, in clustering tasks, we may use the pmf to model the distribution of discrete data points and the cdf to make predictions about the likelihood of certain outcomes based on that distribution.
+    - In summary, the pdf, cdf, and pmf are all important tools for understanding and modeling probability distributions in machine learning, and their relationships are crucial for making accurate predictions based on data.
+    - For example, in a classification problem, we may use the pdf to model the distribution of the features for each class and the cdf to make predictions about the likelihood of a data point belonging to a certain class based on its features. In regression problems, we may use the pdf to model the distribution of the target variable and the cdf to make predictions about the likelihood of certain outcomes based on that distribution. Additionally, in clustering tasks, we may use the pmf to model the distribution of discrete data points and the cdf to make predictions about the likelihood of certain outcomes based on that distribution.
+    - In summary, the pdf, cdf, and pmf are all important tools for understanding and modeling probability distributions in machine learning, and their relationships are crucial for making accurate predictions based on data.
+
+    
+
+
+DataSet : House price prediction dataset
+    - The dataset contains information about various houses, including their size, number of rooms, location, and price. The goal of the dataset is to predict the price of a house based on its features. The dataset can be used to train machine learning models to make predictions about house prices based on the features of the houses. For example, we can use the size of the house and the number of rooms as features to predict the price of a house. The dataset can also be used to analyze the relationship between different features and house prices, which can provide insights into what factors are most important in determining house prices.
+   -size of the house : contnious random variable . kyuki house size can take any value within a certain range (e.g., 1000 sq ft, 1500 sq ft, etc.). The pdf can be used to model the distribution of house sizes in a given area, and the cdf can be used to make predictions about the likelihood of a house being below or above a certain size. For example, if we have a dataset of house sizes, we can use the pdf to model the distribution of those sizes and the cdf to make predictions about the likelihood of a house being below or above a certain size based on that distribution. This information can be useful for real estate agents, home buyers, and sellers to make informed decisions about pricing and marketing strategies.
+    and we will use pdf and cdf to model the distribution of house sizes in a given area, and to make predictions about the likelihood of a house being below or above a certain size based on that distribution. For example, if we have a dataset of house sizes, we can use the pdf to model the distribution of those sizes and the cdf to make predictions about the likelihood of a house being below or above a certain size based on that distribution. This information can be useful for real estate agents, home buyers, and sellers to make informed decisions about pricing and marketing strategies.
+
+    -No of rooms: discrete random variable. kyuki no of rooms can only take specific values (e.g., 1 room, 2 rooms, etc.). The pmf can be used to model the distribution of the number of rooms in a given area, and the cdf can be used to make predictions about the likelihood of a house having a certain number of rooms or less. For example, if we have a dataset of the number of rooms in houses, we can use the pmf to model the distribution of those numbers and the cdf to make predictions about the likelihood of a house having a certain number of rooms or less based on that distribution. This information can be useful for real estate agents, home buyers, and sellers to make informed decisions about pricing and marketing strategies.
+    
+    -Location: categorical variable. kyuki location can take specific values (e.g., urban, suburban, rural). The pmf can be used to model the distribution of locations in a given area, and the cdf can be used to make predictions about the likelihood of a house being located in a certain area or less desirable areas. For example, if we have a dataset of house locations, we can use the pmf to model the distribution of those locations and the cdf to make predictions about the likelihood of a house being located in a certain area or less desirable areas based on that distribution. This information can be useful for real estate agents, home buyers, and sellers to make informed decisions about pricing and marketing strategies.
+
+    - floor : discrete random variable. kyuki floor can only take specific values (e.g., 1st floor, 2nd floor, etc.). The pmf can be used to model the distribution of floors in a given area, and the cdf can be used to make predictions about the likelihood of a house being located on a certain floor or less. For example, if we have a dataset of the number of floors in houses, we can use the pmf to model the distribution of those numbers and the cdf to make predictions about the likelihood of a house being located on a certain floor or less based on that distribution. This information can be useful for real estate agents, home buyers, and sellers to make informed decisions about pricing and marketing strategies.
+
+    - sea side : categorical variable. kyuki sea side can take specific values (e.g., yes, no). The pmf can be used to model the distribution of sea side locations in a given area, and the cdf can be used to make predictions about the likelihood of a house being located near the sea or not. For example, if we have a dataset of house locations with information about whether they are near the sea or not, we can use the pmf to model the distribution of those locations and the cdf to make predictions about the likelihood of a house being located near the sea or not based on that distribution. This information can be useful for real estate agents, home buyers, and sellers to make informed decisions about pricing and marketing strategies.
+
+    - price : contnious random variable. kyuki price can take any value within a certain range (e.g., $100,000, $150,000, etc.). The pdf can be used to model the distribution of house prices in a given area, and the cdf can be used to make predictions about the likelihood of a house being below or above a certain price. For example, if we have a dataset of house prices, we can use the pdf to model the distribution of those prices and the cdf to make predictions about the likelihood of a house being below or above a certain price based on that distribution. This information can be useful for real estate agents, home buyers, and sellers to make informed decisions about pricing and marketing strategies.
+    hmlg pdf use karenge to model the distribution of house prices in a given area, and the cdf to make predictions about the likelihood of a house being below or above a certain price based on that distribution. For example, if we have a dataset of house prices, we can use the pdf to model the distribution of those prices and the cdf to make predictions about the likelihood of a house being below or above a certain price based on that distribution. This information can be useful for real estate agents, home buyers, and sellers to make informed decisions about pricing and marketing strategies.
+
+
+
+Types of probability distributions :
+    - Normal distribution : A continuous probability distribution that is symmetric and bell-shaped, defined by its mean and standard deviation. It is commonly used in statistics and machine learning to model real-world phenomena such as heights, weights, and test scores.
+    - Binomial distribution : A discrete probability distribution that models the number of successes in a fixed number of independent trials, where each trial has a constant probability of success. It is commonly used in machine learning for classification problems and to model binary outcomes.
+    - Poisson distribution : A discrete probability distribution that models the number of events occurring in a fixed interval of time or space, given a constant average rate of occurrence. It is commonly used in machine learning for modeling count data and rare events.
+    - bernoulli distribution : A discrete probability distribution that models a binary outcome, where there are only two possible outcomes (e.g., success or failure). It is commonly used in machine learning for binary classification problems and to model the probability of a certain event occurring.
+    - Exponential distribution : A continuous probability distribution that models the time between events in a Poisson process, where events occur continuously and independently at a constant average rate. It is commonly used in machine learning for modeling waiting times and survival analysis.
+    - Uniform distribution : A continuous probability distribution that models a random variable that has an equal probability of taking on any value within a certain range. It is commonly used in machine learning for modeling random sampling and to generate random numbers.
+    - Multinomial distribution : A discrete probability distribution that models the number of successes in a fixed number of independent trials, where each trial can have more than two possible outcomes. It is commonly used in machine learning for modeling categorical data and to model the probability of a certain event occurring in a multi-class classification problem.
+    - Gamma distribution : A continuous probability distribution that models the time until an event occurs, where the event occurs at a constant average rate. It is commonly used in machine learning for modeling waiting times and survival analysis, particularly when the data is skewed or has a long tail.
+    - Beta distribution : A continuous probability distribution that models the probability of a certain event occurring, where the event can take on any value between 0 and 1. It is commonly used in machine learning for modeling probabilities and to model the distribution of parameters in Bayesian inference.
+    - Dirichlet distribution : A continuous probability distribution that models the probabilities of a set of outcomes, where the outcomes can take on any value between 0 and 1 and must sum to 1. It is commonly used in machine learning for modeling probabilities in multi-class classification problems and to model the distribution of parameters in Bayesian inference.
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+'''
