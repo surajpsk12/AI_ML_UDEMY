@@ -63,6 +63,22 @@ Types of probability distributions :
     
 
 
+FORMAT : 
+    
+topic : 
+
+defination : 
+
+ex : 
+
+real life scenario : 
+
+case study : 
+
+use in ai ml : 
+
+conclusion :
+
 
 
 
