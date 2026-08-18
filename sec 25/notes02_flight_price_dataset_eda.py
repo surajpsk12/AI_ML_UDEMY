@@ -19,5 +19,6 @@ isme data diya hai jo bhi usko numerical value me lana hia jo model understand k
 same with agar koi string hia  to oneHotencoder se change karo aur value me leke aao . means raw data se meaning full data banana fir model ko send karna 
 
 
+
 """
 
